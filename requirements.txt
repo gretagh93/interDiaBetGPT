@@ -1,0 +1,4 @@
+sqlalchemy-iris
+langchain
+openai
+python-telegram-bot
