@@ -4,11 +4,11 @@
 
 The idea of this project is to develop a Telegram interface utilizing ChatGPT, capable of answering complex questions about statistical data related to diabetes.
 
-To do it, we use Iris IntegratedML and large lenguage model ChatGPT.
+To achieve this, we use Iris IntegratedML and the large language model ChatGPT.
 
-With Iris IntegratedML we trained a ML model. 
+With Iris IntegratedML, we trained a machine learning (ML) model.
 
-During the model validation process we have seen that the variance, R2, etc. metrics were not good. We have created other models by varying the number of columns used and reducing the diabetes values to (0 --> the patient does not have diabetes, 1--> the patient has diabetes). We finally got the 'DiabetesModelValidate31' model, which had the best probability metric statistics. Finally we have created a persistent field in the 'ValidateDataDiabetes' table that contains the result of the prediction for each row. This last table is the table on which we perform the SQL queries to answer the questions made by the user.
+During the model validation process, we observed that the variance, R2, and other metrics were not satisfactory. As a result, we created additional models by varying the number of columns used and reducing the diabetes values to binary (0 represents patients without diabetes, and 1 represents patients with diabetes). Eventually, we obtained the 'DiabetesModelValidate31' model, which exhibited the best probability metric statistics. Additionally, we created a persistent field in the 'ValidateDataDiabetes' table that contains the prediction results for each row. This table serves as the basis for performing SQL queries to answer user questions."
 
 To build the Docker image:
 docker build -t hackathon-app . 
