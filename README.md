@@ -15,3 +15,5 @@ docker run -it --rm --name hackathon-app hackathon-app
 Data Source: https://www.kaggle.com/datasets/cdc/behavioral-risk-factor-surveillance-system
 
 Details of each feature: https://www.cdc.gov/brfss/annual_data/2015/pdf/codebook15_llcp.pdf
+
+Frameworks: https://docs.langchain.com/docs/
