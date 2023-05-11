@@ -1,12 +1,10 @@
-# Hackaton - ON: The Beach 
+# interDiaBetGPT
 
-## interDiaBetGPT
+Project inicialized in J ON: The Beach Hackaton with Intersystems.
 
-The idea of this project is to develop a Telegram interface utilizing ChatGPT, capable of answering complex questions about statistical data related to diabetes.
+The idea of this project is to develop a Telegram bot utilizing ChatGPT, which is capable of answering complex questions about statistical data related to healthcare.
 
-To do it, we use Iris IntegratedML and large lenguage model ChatGPT.
-
-With Iris IntegratedML we trained a ML model. 
+We integrated Iris IntegratedML and Large Lenguage Model ChatGPT.
 
 During the model validation process we have seen that the variance, R2, etc. metrics were not good. We have created other models by varying the number of columns used and reducing the diabetes values to (0 --> the patient does not have diabetes, 1--> the patient has diabetes). We finally got the 'DiabetesModelValidate31' model, which had the best probability metric statistics. Finally we have created a persistent field in the 'ValidateDataDiabetes' table that contains the result of the prediction for each row. This last table is the table on which we perform the SQL queries to answer the questions made by the user.
 
